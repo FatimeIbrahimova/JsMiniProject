@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.nav {
+    background-color: blue;
+    /* height: 50px; */
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav-leftside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-rightside {
+    display: flex;
+    flex-direction: row;
+}
+ul li {
+    list-style: none;
+    padding: 10px;
+}
+.fa-brands {
+    color: white;
+    /* padding: 10px; */
+}
+.nav-rightside .fa-solid {
+    color: red;
+    padding-left: 30px;
+}
+span {
+    color: white;
+}
+
+.naw2 {
+    /* height: 80px; */
+    display: flex;
+    align-items: center;
+}
+.nav2-rightside {
+    display: flex;
+    justify-content: space-around;
+}
+.title-logo {
+    margin-top: 5px;
+}
+.btn-nav {
+    margin-top: 5px;
+    background-color: red;
+    border: none;
+    padding: 8px 30px;
+    margin-left: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 22px;
+}
+.btn-nav a {
+    text-decoration: none;
+    color: white;
+}
+.nav-list {
+    display: flex;
+    flex-direction: row;
+}
+li {
+    display: flex;
+    gap: 30px;
+}
+.img-wrapper img {
+    height: 50vh;
+    width: 100%;
+    filter: brightness(50%);
+    object-fit: cover;
+}
+/* .hero-section{
+     background-color: black;
+ } */
+.hero-section {
+    position: relative;
+}
+.img-title {
+    position: absolute;
+    top: 120px;
+    left: 300px;
+}
+.img-title h1 {
+    font-size: 45px;
+    line-height: 1em;
+    font-weight: 800;
+    color: white;
+    position: relative;
+}
+.img-title_list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.img-title_list li a {
+    text-decoration: none;
+    color: white;
+}
+.img-title_list li a:hover {
+    color: red;
+}
+.img-title_list li {
+    color: white;
+}
+.img-title_list ul {
+    display: flex;
+    flex-direction: row;
+}
+.fa-chevron-right {
+    margin-top: 6px;
+}
+.shoes-price {
+    color: red;
+}
+
+@media only screen and (max-width: 576px) {
+    .middle-side {
+        display: none;
+    }
+    .title-logo {
+        text-align: center;
+    }
+    .fa-magnifying-glass {
+        text-align: start;
+    }
+    .btn-nav {
+        text-align: end;
+    }
+    .img-title h1 {
+        text-align: center;
+    }
+}
+
+#second-section {
+    height: 90vh;
+}
+.nav-scroll {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+}
+.fa-arrow-up {
+    position: absolute;
+    /* right: 30px;
+    bottom: 20px; */
+    width: 35px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
