@@ -38,7 +38,9 @@ ul li {
     color: white;
     /* padding: 10px; */
 }
-
+span{
+    color: white;
+}
  .fa-brands:hover {
     color: red;
 }
@@ -50,7 +52,7 @@ color: red;
     padding-left: 30px;
 }
 
-span {
+ .nav-rightside span {
     color: white;
 }
 
@@ -275,9 +277,9 @@ hr{
     margin-top: 40px;
     color: grey;
 }
-.content{
+/* .content{
     display: none;
-}
+} */
 .comments{
     display: none;
 }
@@ -382,3 +384,38 @@ hr{
 .third-section{
     height: 100vh;
 }
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+.swiper-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

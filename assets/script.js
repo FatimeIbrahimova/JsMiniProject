@@ -23,12 +23,12 @@ fetch('https://fakestoreapi.com/products/categories')
 // });
 
 /*Back to Top */
-const upIcon = document.querySelector(".fa-arrow-up");
-upIcon.addEventListener("click", () => {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-)
+// const upIcon = document.querySelector(".fa-arrow-up");
+// upIcon.addEventListener("click", () => {
+//     document.body.scrollTop = 0;
+//     document.documentElement.scrollTop = 0;
+// }
+// )
 
 /*Desc and Comments*/
 const btnProductDesc=document.querySelector(".product-desc");
@@ -37,8 +37,8 @@ const content=document.querySelector(".content");
 const comments=document.querySelector(".comments");
 btnProductDesc.addEventListener("click",(e)=>{
 e.preventDefault();
-    if(content.style.display="none"){
-        content.style.display="block";
+    if(content.style.display="block"){
+        // content.style.display="block";
         comments.style.display="none";
         btnProductDesc.classList.add("active");
         btnReview.classList.remove("active");
@@ -61,10 +61,12 @@ const number=document.querySelector(".number");
 const iconDown=document.querySelector(".fa-chevron-down");
 let count=0;
 iconUp.addEventListener("click",()=>{
+    console.log("click");
     count++;
     number.innerText=count;
 })
 iconDown.addEventListener("click",()=>{
+    console.log("click");
     if(number<=1){
         count=0;
         number.innerText=count; 
@@ -74,5 +76,14 @@ iconDown.addEventListener("click",()=>{
         number.innerText=count;
     }
 })
+// <!-- Initialize Swiper-->
 
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
 
