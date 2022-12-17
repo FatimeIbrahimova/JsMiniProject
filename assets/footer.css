@@ -3,18 +3,18 @@ footer{
 }
 .footer-top{
     background-color: red;
-    height: 200px;
+    /* height: 200px; */
     z-index: 9999;
     margin-bottom: -94px;
 }
 .footer-top_title{
     width: 300px;
     color:white;
-   padding-top: 50px;
+   padding-top: 30px;
    padding-left: 20px;
 }
 .rightside{
-    padding-top: 70px;
+    padding-top: 40px;
 }
 .footer-top_input{
     width: 250px;
@@ -100,6 +100,7 @@ color: white;
 }
 .end-footer{
     background-color: #3648b2;
+    position: relative;
 }
 .end-footer .col-6{
     padding-top:20px;
