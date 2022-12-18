@@ -10,80 +10,87 @@ fetch('https://fakestoreapi.com/products/categories')
     }
     )
 
+/*Loading */
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        document.querySelector(".loader-wrapper").style.display = "none";
+        document.body.style.overflow = "scroll";
+    }, 2000);
+});
 /* Navbar Scroll*/
- window.addEventListener("scroll", () => {
+window.addEventListener("scroll", () => {
     const nav = document.querySelector(".naw2");
-     const scrollValue = window.scrollY;
+    const scrollValue = window.scrollY;
     //  console.log(scrollValue);
-     if (scrollValue < 150) {
-         nav.classList.remove("nav-scroll");
-     } else {
-         nav.classList.add("nav-scroll");
-     }
+    if (scrollValue < 150) {
+        nav.classList.remove("nav-scroll");
+    } else {
+        nav.classList.add("nav-scroll");
+    }
 });
 
 /*Back to Top */
- const upIcon = document.querySelector(".fa-arrow-up");
- upIcon.addEventListener("click", () => {
-     document.body.scrollTop = 0;
-     document.documentElement.scrollTop = 0;
- }
+const upIcon = document.querySelector(".fa-arrow-up");
+upIcon.addEventListener("click", () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 )
 
 /*Desc and Comments*/
-const btnProductDesc=document.querySelector(".product-desc");
-const btnReview=document.querySelector(".review");
-const content=document.querySelector(".content");
-const comments=document.querySelector(".comments");
-btnProductDesc.addEventListener("click",(e)=>{
-e.preventDefault();
-    if(content.style.display="block"){
+const btnProductDesc = document.querySelector(".product-desc");
+const btnReview = document.querySelector(".review");
+const content = document.querySelector(".content");
+const comments = document.querySelector(".comments");
+btnProductDesc.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (content.style.display = "block") {
         // content.style.display="block";
-        comments.style.display="none";
+        comments.style.display = "none";
         btnProductDesc.classList.add("active");
         btnReview.classList.remove("active");
-    } 
+    }
 })
-btnReview.addEventListener("click",(e)=>{
+btnReview.addEventListener("click", (e) => {
     console.log("click");
     e.preventDefault();
-    if(comments.style.display="none"){
-        comments.style.display="block";
+    if (comments.style.display = "none") {
+        comments.style.display = "block";
         btnReview.classList.add("active");
         btnProductDesc.classList.remove("active");
-        content.style.display="none";
+        content.style.display = "none";
     }
 })
 /*increase count */
 
-const iconUp=document.querySelector(".fa-chevron-up");
-const number=document.querySelector(".number");
-const iconDown=document.querySelector(".fa-chevron-down");
-let count=0;
-iconUp.addEventListener("click",()=>{
+const iconUp = document.querySelector(".fa-chevron-up");
+const number = document.querySelector(".number");
+const iconDown = document.querySelector(".fa-chevron-down");
+let count = 0;
+iconUp.addEventListener("click", () => {
     console.log("click");
     count++;
-    number.innerText=count;
+    number.innerText = count;
 })
-iconDown.addEventListener("click",()=>{
+iconDown.addEventListener("click", () => {
     console.log("click");
-    if(number<=1){
-        count=0;
-        number.innerText=count; 
+    if (number < 0) {
+        count = 0;
+        number.innerText = count;
     }
-    else{
+    else {
         count--;
-        number.innerText=count;
+        number.innerText = count;
     }
 })
 // <!-- Initialize Swiper-->
 
-  var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     spaceBetween: 30,
     pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+        el: ".swiper-pagination",
+        clickable: true,
     },
-  });
+});
 

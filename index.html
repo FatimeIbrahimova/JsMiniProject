@@ -21,6 +21,13 @@
 </head>
 
 <body>
+    <div class="loader-wrapper">
+        <div>
+          <div class="spinner-border" role="status">
+           
+          </div>
+        </div>
+      </div>
     <div class="nav">
         <div class="container">
             <div class="row ">
@@ -232,6 +239,7 @@
                                             <div class="mail">
                                                 <label for="mail">Email*</label>
                                                 <input type="text" id="mail">
+                                                <span class="err-email"></span>
                                             </div>
                                         </div>
                                         <div class="user-rating">
@@ -248,7 +256,7 @@
                                         </div>
                                         <div class="text-area">
                                             <label for="">Your Comments</label><br>
-                                            <textarea name="message" placeholder></textarea>
+                                            <textarea name="message" id="textarea" placeholder></textarea>
                                         </div>
                                         <button class="btn-send">Send Now</button>
                                     </div>
@@ -276,7 +284,7 @@
                             <!-- <div class="four-img">  -->
                             <!-- <div class="row"> -->
                             <!-- <div class="col-3"> -->
-                            <div class="img-wrap">
+                             <div class="img-wrap">
                                 <img src=" http://html.commonsupport.xyz/2019/Barnet/images/resource/products/4.jpg"
                                     alt="">
                             </div>
@@ -286,13 +294,13 @@
                                 <li><a href=""><i class="fa-solid fa-bag-shopping"></i></a></li>
                                 <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
                             </ul>
-                        </div> -->
-                            <!-- <div class="image-title">
+                        </div>  -->
+                             <!-- <div class="image-title">
                             <p>Multi-Way Ultra Crop Top</p>
                         </div>
                         <div class="image-price">
                             <span>$50.00</span>
-                        </div> -->
+                        </div>  --> 
                         </div>
                         <!-- <div class="col-3">
                         <img src="http://html.commonsupport.xyz/2019/Barnet/images/resource/products/1.jpg"
@@ -429,10 +437,10 @@
                         </div>
                         <div>
                             <ul class="footer-end_list">
-                                <li><i class="fa-brands fa-google-plus-g"></i></li>
-                                <li><i class="fa-brands fa-facebook-f"></i></li>
-                                <li><i class="fa-brands fa-dribbble"></i></li>
-                                <li><i class="fa-brands fa-twitter"></i></li>
+                                <li class="google"><a href=""><i class="fa-brands fa-google-plus-g"></i></a></li>
+                                <li class="facebook"><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li class="dribble"><a href=""><i class="fa-brands fa-dribbble"></i></a></li>
+                                <li class="twitter"><a href=""><i class="fa-brands fa-twitter"></i></a></li>
                             </ul>
                         </div>
                     </div>

@@ -1,22 +1,26 @@
-footer{
-    height:80vh;
+footer {
+    height: 80vh;
 }
-.footer-top{
+
+.footer-top {
     background-color: red;
     /* height: 200px; */
     z-index: 9999;
     margin-bottom: -94px;
 }
-.footer-top_title{
+
+.footer-top_title {
     width: 300px;
-    color:white;
-   padding-top: 30px;
-   padding-left: 20px;
+    color: white;
+    padding-top: 30px;
+    padding-left: 20px;
 }
-.rightside{
+
+.rightside {
     padding-top: 40px;
 }
-.footer-top_input{
+
+.footer-top_input {
     width: 250px;
     height: 70px;
     border-radius: 50px;
@@ -24,92 +28,121 @@ footer{
     outline: none;
     background-color: #FF6C6C;
 }
-.subscribe{
+
+.subscribe {
     width: 250px;
     height: 70px;
     background-color: white;
-    color:black;
+    color: black;
     border-radius: 50px;
     border: none;
 }
-.footer-middle{
+
+.footer-middle {
     /* height:70vh; */
     background-color: #1E2863;
     position: relative;
     z-index: -1;
 }
-.footer-middle .col-3{
+
+.footer-middle .col-3 {
     padding-top: 170px;
     padding-bottom: 50px;
 }
-.footer-content_text p{
+
+.footer-content_text p {
     padding-top: 20px;
-    color:white;
+    color: white;
 }
-.top{
+
+.top {
     display: flex;
 }
-.col-3 h4{
-    color:white;
+
+.col-3 h4 {
+    color: white;
 }
-.author p{
-    color:white;
+
+.author p {
+    color: white;
 }
+
 .footer-text {
     display: flex;
 }
-.footer-text p{
-    color:white;
+
+.footer-text p {
+    color: white;
 }
-.footer-text a{
-    color:red;
+
+.footer-text a {
+    color: red;
 }
-.col-3 h6{
-color: white;
+
+.col-3 h6 {
+    color: white;
 }
-.col-3 p{
-    color:#cecfd8;
+
+.col-3 p {
+    color: #cecfd8;
 }
-.article{
+
+.article {
     padding-bottom: 30px;
 }
-.footer-end_list{
+
+.footer-end_list {
     display: flex;
     padding-left: 0px;
 }
-.footer-end_list .fa-brands{
+
+.footer-end_list .fa-brands {
     width: 40px;
     height: 40px;
-    border-radius:40px;
+    border-radius: 40px;
     border: 1px solid;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: none;
+    color: white;
 }
-.fa-google-plus-g{
+
+.fa-google-plus-g {
     background-color: #db4a37;
 }
-.footer-end_list .fa-facebook-f{
+
+.footer-end_list .fa-facebook-f {
     background-color: #3b5796;
 }
-.fa-dribbble{
+
+.fa-dribbble {
     background-color: #ea4c89;
 }
-.footer-end_list .fa-twitter{
+
+.footer-end_list .fa-twitter {
     background-color: #55aded;
 }
-.end-footer{
+
+.footer-end_list .google a:hover {
+    background-color: white;
+    color: red;
+}
+.footer-end_list .facebook a:hover{
+    background-color: white;
+    color:#3648b2;
+}
+.end-footer {
     background-color: #3648b2;
     position: relative;
+    z-index: -1;
 }
-.end-footer .col-6{
-    padding-top:20px;
+
+.end-footer .col-6 {
+    padding-top: 20px;
     padding-bottom: 20px;
 }
-/* .service{
-    border-right: 1px solid white;
-} */
-.end-footer span{
+.end-footer span {
     padding-left: 30px;
     padding-right: 20px;
 }
