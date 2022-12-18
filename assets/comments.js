@@ -7,7 +7,7 @@ const errEmail = document.querySelector(".err-email");
 let commentName = document.querySelector("#name").value;
 let commentEmail = document.querySelector("#mail").value;
 let comment = document.querySelector("#textarea").value;
-let submit = document.querySelector("#submit_comment");
+let submit = document.querySelector(".btn-send");
 
 submit.addEventListener("click", () => {
     let data = {
